@@ -1,0 +1,14 @@
+[
+    {
+        "title": "I love Javascript! What do you guys think?",
+        "user_id": 1
+    },
+    {
+        "title": "I love HTML! What do you guys think?",
+        "user_id": 2
+    },
+    {
+        "title": "I love CSS! What do you guys think?",
+        "user_id": 3
+    }
+]

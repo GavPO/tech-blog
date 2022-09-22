@@ -1,0 +1,22 @@
+[
+    {
+        "text": "I love it!",
+        "user_id": 3,
+        "post_id": 1
+    },
+    {
+        "text": "I don't mind it!",
+        "user_id": 2,
+        "post_id": 2
+    },
+    {
+        "text": "I hate it!",
+        "user_id": 1,
+        "post_id": 3
+    },
+    {
+        "text": "I do not like it at all!",
+        "user_id": 2,
+        "post_id": 3
+    }
+]
