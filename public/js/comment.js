@@ -1,9 +1,7 @@
 async function commentButtonHandler(event) {
-    event.preventDefault();
+  event.preventDefault();
+}
 
-  };
-  
-  document
-    .querySelector(".comment-btn")
-    .addEventListener("click", commentButtonHandler);
-  
+document
+  .querySelector(".comment-btn")
+  .addEventListener("click", commentButtonHandler);
