@@ -28,10 +28,29 @@ router.post("/login", async (req, res) => {
 
       res.json({ user: userData, message: "You are now logged in!" });
     });
-    res.redirect('/');
   } catch (err) {
     res.status(400).json(err);
   }
+});
+
+router.post("/signup", async (req, res) => {
+  try {
+    const userCheck = await User.findOne({
+      where: { username: req.body.username }
+    });
+    if (!userCheck) {
+      const newUser = await User.create(req.body)
+      req.session.save(() => {
+        req.session.userId = newUser.userId;
+        req.session.loggedIn = true;
+      });
+      res.status(200);
+    } else {
+      res.json({ message: "That user exists!" });
+    }
+  } catch(err) {
+    res.status(500).json(err);
+  };
 });
 
 module.exports = router;
