@@ -10,8 +10,7 @@ async function postFormHandler(event) {
         });
     
         if (response.ok) {
-        //   document.location.replace("/");
-        console.log(response)
+          document.location.replace("/");
         } else {
           alert("Failed to log in");
         }
